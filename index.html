@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"n type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+    <div class="container" id="homepage">
+      <div class="content-container">
+        <h1 class="hometitle">{{title}}</h1>
+        <p class="textcontent">{{content}}</p>
+      </div>
+      <div class="video-container">
+        <video  autoplay loop muted id="home-bg-video">
+            <source v-bind:src="'videos/' + backgroundVideo" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="container" id="information-section">
+      <div class="main-title">
+          <h1>{{titleSection}}</h1>
+      </div>
+      <div class="info-content">
+        <div>
+          <img v-bind:src="'images/'+image1">
+        </div>
+        <div>
+          <h2>{{title1}}</h2>
+          <p>{{content1}}</p>
+        </div>
+      </div>
+      <div class="info-content" >
+        <div>
+          <h2>{{title2}}</h2>
+          <p>{{content2}}</p>
+        </div>
+        <div>
+          <img v-bind:src="'images/'+image2">
+        </div>
+      </div>
+      <div class="info-content">
+        <div>
+          <img v-bind:src="'images/'+image3">
+        </div>
+        <div>
+          <h2>{{title3}}</h2>
+          <p>{{content3}}</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="data.js"></script>
+  </body>
+</html>
