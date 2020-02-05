@@ -24,36 +24,81 @@
       </div>
       <div class="info-content">
         <div>
-          <img v-bind:src="'images/'+image1">
+          <img v-bind:src="'images/'+part1.image">
         </div>
         <div>
-          <h2>{{title1}}</h2>
-          <p>{{content1}}</p>
+          <h2>{{part1.title}}</h2>
+          <p>{{part1.content}}</p>
         </div>
       </div>
       <div class="info-content" >
         <div>
-          <h2>{{title2}}</h2>
-          <p>{{content2}}</p>
+          <h2>{{part2.title}}</h2>
+          <p>{{part2.content}}</p>
         </div>
         <div>
-          <img v-bind:src="'images/'+image2">
+          <img v-bind:src="'images/'+part2.image">
         </div>
       </div>
       <div class="info-content">
         <div>
-          <img v-bind:src="'images/'+image3">
+          <img v-bind:src="'images/'+part3.image">
         </div>
         <div>
-          <h2>{{title3}}</h2>
-          <p>{{content3}}</p>
+          <h2>{{part3.title}}</h2>
+          <p>{{part3.content}}</p>
         </div>
+      </div>
+    </div>
+    <div id="compare-university-section" class="compare-section">
+      <div class="compare-container">
+        <div class="compare-section-title">
+          <h1>{{ mainTitle }}</h1>
+        </div>
+      <div class="compare-table-container">
+        <table class="compare-table">
+          <tr>
+            <th>
+
+            </th>
+            <th>
+              KIT
+            </th>
+            <th>
+              USA
+            </th>
+            <th>
+              Austarlia
+            </th>
+          </tr>
+          <tr>
+            <td>
+              shcool fee
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+    <div id="admission-section">
+      <div class="admission-title">
+          <h1>Admission Process</h1>
+      </div>
+      <div class="admission-process-container">
+
       </div>
     </div>
 
 
 
-
+    <footer id="footer-section">
+      <div class="footer-logo">
+        <img v-bind:src="'images/'+logo" alt="">
+        <div>
+          <p>{{description_under_logo}}</p>
+        </div>
+      </div>
+    </footer>
 
 
 
